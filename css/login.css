@@ -1,0 +1,88 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("../asset/login-background.png") no-repeat center;
+    background-origin: content-box;
+    background-size: cover;
+}
+
+#logo {
+    width: 3rem; 
+    height: 3rem;
+    background: url("../asset/amphr-logo.png") no-repeat center / contain;
+    background-origin: content-box;
+}
+
+#hero-container {
+    height: 100vh;
+    max-width: max(60vw, 45rem);
+    width: 100vw;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-container>* {
+    margin-bottom: var(--space-between-labels);
+}
+
+#hero-container>h2 {
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin: 0 0 var(--space-between-labels) 0;
+}
+
+#hero-container> input[type=text],
+#hero-container> input[type="password"] {
+    background-color: transparent;
+    border-radius: 0.75rem;
+    border: 2px solid var(--alt-text-color);
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    color: var(--subtext-color);
+    padding: 0.75rem;
+    max-width: 20rem;
+    width: 90%;
+}
+
+#remember-me-container {
+    display: flex;
+    max-width: 21rem;
+    width: 90%;
+}
+
+#remember-me-input {
+    margin-right: 0.25rem;
+}
+
+#hero-container> button {
+    background-color: var(--accent-color);
+    padding: 0.75rem 1rem;
+    border-radius: 4rem;
+    border: none;
+    color: var(--background-color);
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 10rem;
+    width: 50%;
+}
+
+#hero-container> button:hover {
+    background-color: var(--hover-accent-color);
+}
+
+#reset-password-link {
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: max(60vw, 45rem)) {
+    #hero-container {
+        width: 100vw;
+    }
+}

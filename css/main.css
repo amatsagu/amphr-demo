@@ -1,0 +1,152 @@
+/* Regular */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* SemiBold */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* SemiBold Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* ExtraBold Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Black */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+:root {
+    --accent-color: #8963e4;
+    --hover-accent-color: color-mix(in srgb, #8963e4 80%, #000000);
+    --text-color: #151618;
+    --alt-text-color: #b1b5be;
+    --background-color: #fefeff;
+    --warn-color: #E5C300;
+    --success-color: #23A55A;
+    --fail-color: #F02C40;
+    --info-color: #246CDC;
+    --text-icon-size: 1.25rem;
+    --ideal-focus-width: 66.666vw;
+    --min-focus-width: 60rem;
+    --space-between-labels: 1.25rem;
+    --space-between-containers: 2.5rem;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 0%;
+    scroll-behavior: smooth;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-width: 0.25rem;
+    scrollbar-color: transparent var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+i {
+    color: var(--text-accent-color);
+    text-decoration: none;
+    font-style: normal;
+}
