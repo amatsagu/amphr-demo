@@ -1,3 +1,9 @@
+Te komendy po kolei, żeby odpaliło:
+
+pnpm install
+
+pnpm run dev
+
 ```mermaid
 graph LR
 
