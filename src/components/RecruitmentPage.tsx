@@ -312,7 +312,7 @@ function DashboardView({ onViewJob, onCreateJob }: { onViewJob: (id: string) => 
 
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-gray-50 dark:bg-gray-700/50">
+            <thead className="bg-gray-50 dark:bg-gray-700/50 wrap-anywhere">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                   Stanowisko
