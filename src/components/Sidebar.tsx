@@ -61,7 +61,7 @@ export function SidebarContent({ onNavigate }: SidebarContentProps) {
       </nav>
 
       {/* Footer */}
-      <div className="px-4 py-4 text-xs text-white/70">
+      <div className="px-4 py-4 text-xs text-white/70 absolute bottom-0">
         AmpHR - Wszystkie dane
         <br />
         zastrzeżone.
@@ -73,7 +73,13 @@ export function SidebarContent({ onNavigate }: SidebarContentProps) {
 export function Sidebar() {
   return (
     <aside className="hidden md:flex flex-col w-56 min-h-screen bg-[#8963e4] text-white">
-      <SidebarContent />
+        <div className="fixed w-56">
+            <div className="h-screen">
+                <SidebarContent/>
+            </div>
+
+        </div>
+
     </aside>
   )
 }
