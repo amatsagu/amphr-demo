@@ -29,7 +29,7 @@ export function LoginPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Login Form */}
-      <div className="flex-1 flex items-center justify-center p-8 bg-white">
+      <div className="flex-1 flex items-center justify-center p-8 bg-white dark:bg-gray-900">
         <div className="w-full max-w-md space-y-8">
           {/* Logo */}
           <div className="flex justify-center">
@@ -37,7 +37,7 @@ export function LoginPage() {
           </div>
 
           {/* Title */}
-          <h1 className="text-2xl font-bold text-center text-gray-900">
+          <h1 className="text-2xl font-bold text-center text-gray-900 dark:text-white">
             Witaj ponownie!
           </h1>
 
@@ -49,7 +49,7 @@ export function LoginPage() {
                 placeholder="Adres email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-12 border-gray-300 focus:border-[#8963e4] focus:ring-[#8963e4]"
+                className="h-12 border-gray-300 dark:border-gray-600 focus:border-[#8963e4] focus:ring-[#8963e4] bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
                 required
               />
             </div>
@@ -60,7 +60,7 @@ export function LoginPage() {
                 placeholder="Hasło"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="h-12 border-gray-300 focus:border-[#8963e4] focus:ring-[#8963e4]"
+                className="h-12 border-gray-300 dark:border-gray-600 focus:border-[#8963e4] focus:ring-[#8963e4] bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
                 required
               />
             </div>
@@ -71,9 +71,9 @@ export function LoginPage() {
                 type="checkbox"
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
-                className="w-4 h-4 text-[#8963e4] bg-gray-100 border-gray-300 rounded focus:ring-[#8963e4] focus:ring-2"
+                className="w-4 h-4 text-[#8963e4] bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600 rounded focus:ring-[#8963e4] focus:ring-2"
               />
-              <label htmlFor="remember" className="ml-2 text-sm text-gray-700">
+              <label htmlFor="remember" className="ml-2 text-sm text-gray-700 dark:text-gray-300">
                 Zapamiętaj
               </label>
             </div>

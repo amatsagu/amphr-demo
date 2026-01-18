@@ -5,6 +5,10 @@ import { PanelPage } from "@/components/PanelPage"
 import { EmployeesPage } from "@/components/EmployeesPage"
 import { DepartmentsPage } from "@/components/DepartmentsPage"
 import { SettingsPage } from "@/components/SettingsPage"
+import { RecruitmentPage } from "@/components/RecruitmentPage"
+import { AssessmentsPage } from "@/components/AssessmentsPage"
+import { TrainingPage } from "@/components/TrainingPage"
+import { ReportsPage } from "@/components/ReportsPage"
 import { LoginPage } from "@/components/LoginPage"
 import { TwoFactorPage } from "@/components/TwoFactorPage"
 import { ThemeProvider } from "@/context/ThemeContext"
@@ -14,6 +18,10 @@ const pageTitles: Record<string, string> = {
   "/": "Panel",
   "/pracownicy": "Pracownicy",
   "/dzialy": "Działy",
+  "/rekrutacja": "Rekrutacja",
+  "/oceny": "Oceny",
+  "/szkolenia": "Szkolenia",
+  "/raporty": "Raporty",
   "/ustawienia": "Ustawienia",
 }
 
@@ -41,6 +49,10 @@ function AppLayout() {
             <Route path="/" element={<PanelPage />} />
             <Route path="/pracownicy" element={<EmployeesPage />} />
             <Route path="/dzialy" element={<DepartmentsPage />} />
+            <Route path="/rekrutacja" element={<RecruitmentPage />} />
+            <Route path="/oceny" element={<AssessmentsPage />} />
+            <Route path="/szkolenia" element={<TrainingPage />} />
+            <Route path="/raporty" element={<ReportsPage />} />
             <Route path="/ustawienia" element={<SettingsPage />} />
           </Routes>
         </main>

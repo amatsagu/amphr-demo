@@ -94,12 +94,12 @@ export function TwoFactorPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - 2FA Form */}
-      <div className="flex-1 flex items-center justify-center p-8 bg-white">
+      <div className="flex-1 flex items-center justify-center p-8 bg-white dark:bg-gray-900">
         <div className="w-full max-w-md space-y-8">
           {/* Back Button */}
           <button 
             onClick={handleBack}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+            className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm">Powrót do logowania</span>
@@ -113,18 +113,18 @@ export function TwoFactorPage() {
           {/* Icon & Title */}
           <div className="text-center space-y-3">
             <div className="flex justify-center">
-              <div className="w-16 h-16 bg-[#8963e4]/10 rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-[#8963e4]/10 dark:bg-[#8963e4]/20 rounded-full flex items-center justify-center">
                 <Shield className="w-8 h-8 text-[#8963e4]" />
               </div>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
               Weryfikacja dwuetapowa
             </h1>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 dark:text-gray-400 text-sm">
               Wprowadź 6-cyfrowy kod z aplikacji uwierzytelniającej
             </p>
             {pendingAuth && (
-              <p className="text-gray-400 text-xs">
+              <p className="text-gray-400 dark:text-gray-500 text-xs">
                 Logujesz się jako: {pendingAuth.email}
               </p>
             )}
@@ -144,9 +144,11 @@ export function TwoFactorPage() {
                   onChange={(e) => handleChange(index, e.target.value)}
                   onKeyDown={(e) => handleKeyDown(index, e)}
                   onPaste={index === 0 ? handlePaste : undefined}
-                  className={`w-12 h-14 text-center text-2xl font-semibold border-2 rounded-lg transition-colors
+                  className={`w-12 h-14 text-center text-2xl font-semibold border-2 rounded-lg transition-colors text-gray-900 dark:text-white
                     focus:outline-none focus:border-[#8963e4] focus:ring-2 focus:ring-[#8963e4]/20
-                    ${error ? "border-red-300 bg-red-50" : "border-gray-200 bg-gray-50"}
+                    ${error 
+                      ? "border-red-300 bg-red-50 dark:border-red-700 dark:bg-red-900/20" 
+                      : "border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800"}
                   `}
                 />
               ))}
@@ -167,7 +169,7 @@ export function TwoFactorPage() {
 
           {/* Help Text */}
           <div className="text-center space-y-2">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               Nie masz dostępu do kodu?
             </p>
             <a href="#" className="text-sm text-[#8963e4] hover:underline">

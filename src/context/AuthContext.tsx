@@ -72,7 +72,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = () => {
     setUser(null)
     setPendingAuth(null)
-    localStorage.removeItem("user")
+    
+    // Preserve theme setting before clearing localStorage
+    const theme = localStorage.getItem("theme")
+    
+    // Clear all localStorage data
+    localStorage.clear()
+    
+    // Restore theme setting
+    if (theme) {
+      localStorage.setItem("theme", theme)
+    }
+    
+    // Clear all cookies
+    document.cookie.split(";").forEach((cookie) => {
+      const eqPos = cookie.indexOf("=")
+      const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim()
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/"
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window.location.hostname
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=." + window.location.hostname
+    })
   }
 
   return (

@@ -1,4 +1,4 @@
-import { Home, Users, Building2, Settings } from "lucide-react"
+import { Home, Users, Building2, Settings, UserPlus, ClipboardCheck, GraduationCap } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { NavLink } from "react-router-dom"
 import logoImage from "@/assets/amphr-logo.png"
@@ -7,6 +7,10 @@ const menuItems = [
   { id: "panel", label: "Panel", icon: Home, path: "/" },
   { id: "pracownicy", label: "Pracownicy", icon: Users, path: "/pracownicy" },
   { id: "dzialy", label: "Działy", icon: Building2, path: "/dzialy" },
+  { id: "rekrutacja", label: "Rekrutacja", icon: UserPlus, path: "/rekrutacja" },
+  { id: "oceny", label: "Oceny", icon: ClipboardCheck, path: "/oceny" },
+  { id: "szkolenia", label: "Szkolenia", icon: GraduationCap, path: "/szkolenia" },
+  // { id: "raporty", label: "Raporty", icon: BarChart3, path: "/raporty" },
   { id: "ustawienia", label: "Ustawienia", icon: Settings, path: "/ustawienia" },
 ]
 
@@ -20,7 +24,7 @@ export function SidebarContent({ onNavigate }: SidebarContentProps) {
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-5">
         <div className="flex items-center justify-center w-8 h-8">
-          <img src={logoImage} alt="AmpHR Logo" className="w-8 h-8 object-contain filter brightness-0 invert" />
+          <img src={logoImage} alt="AmpHR Logo" className="w-8 h-8 object-contain brightness-0 invert" />
         </div>
         <div>
           <div className="font-semibold text-lg leading-tight">AmpHR</div>

@@ -1,0 +1,30 @@
+Nazwa Projektu: AmpHR
+
+Project Owner / Project Manager / UI/UX designer: Nikodem Reszka
+
+- Kierowanie zespołem projektowym i nadzór nad realizacją zadań.
+- Ustalanie celów projektu i priorytetów funkcji systemu HRMS.
+- Organizacja pracy i harmonogramu zespołu.
+- Komunikacja między członkami zespołu.
+- Reprezentowanie perspektywy biznesowej (wymagania firmy Energetyka Sp. z o.o.).
+- Akceptacja kluczowych etapów projektu i końcowego rozwiązania.
+- Zbieranie i analiza wymagań od właściciela biznesowego.
+- Upewnienie się, że system spełnia potrzeby użytkowników i firmy.
+- Utworzenie prototypu interfejsu (np. w Figma).
+- Przygotowanie finalnej wizualizacji wyglądu systemu.
+- Analiza Ryzyk
+
+
+Analityk: Kacper Dybowski
+
+- Opracowanie diagramu przypadków użycia
+- Projektowanie wewnętrznych procesów systemowych i relacji danych.
+- Współpraca z artystą w zakresie dostosowania interfejsu do funkcji systemu.
+- Przygotowanie testów użytkowania
+
+Inżynier i Specjalista ds. Estetyki i Intuicyjności systemu: Krzysztof Rapior
+- Realizacja mapy procesów biznesowych
+- Opracowanie kolorystyki, ikon i stylu graficznego systemu.
+- Współpraca z analitykiem w celu dopasowania projektu do logiki systemu.
+- Opracowanie diagramu klas
+- Dbanie o estetykę i intuicyjność interfejsu użytkownika.
